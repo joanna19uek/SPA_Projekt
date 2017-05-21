@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WpólDoKotleta</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    </head>
+    <body ng-app="myApp">
+            <nav class="navbar navbar-inverse navbar-fixed-top ">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#/main">WpolDoKotleta</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Przepisy
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Ala Trello</a></li>
+                                <li><a href="#">Ala blogger</a></li>
+                                <li><a href="#">Ala janusz</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#/ulubione">Ulubione</a></li>
+                        <li><a href="#/menuUzytkownika">Custom menu</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#/zarejestruj"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#/zaloguj"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="jumbotron">
+                <div class="container text-center">
+                    <h1>WpółDoKotleta</h1>
+                    <p>Przepisy, dania, gotowe pomysły!</p>
+                </div>
+            </div>
+            <div ng-view></div>
+            <script src="przepisy.js"></script>
+    </body>
+</html>
